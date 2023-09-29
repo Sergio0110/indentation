@@ -1,0 +1,31 @@
+.contents-nav {
+  border-radius: 10px;
+  background: #F1F1F1;
+  max-width: 1140px;
+  height: 215px;
+  padding: 25px 45px;
+  margin-bottom: 50px;
+}
+
+.contents-nav__title {
+  font-size: 44px;
+  color: #000;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.contents-nav__points {
+  text-decoration: underline;
+  color: #02535F;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.contents-nav__points:last-child {
+  margin: 0;
+}
+
+.contents-nav__group-li {
+  margin: 0;
+}
