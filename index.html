@@ -20,7 +20,7 @@
     <section class="contents-nav"> 
       <h2 class="contents-nav__title">Содержание:</h2>
         <nav>
-          <ol class="contents-nav__group-li">
+          <ol class="contents-nav__groupli">
             <li class="contents-nav__points">Отступ задается от предыдущего элемента к следующему</li>
             <li class="contents-nav__points">Отступ задается последнему возможному элементу в DOM-дереве</li>
             <li class="contents-nav__points">Для последнего элемента группы отступ обнуляется</li>
@@ -34,44 +34,52 @@
       </h3>
       <div class="first-rule__margin">
         <div class="first-rule__img"></div>
-        <div class="first-rule__about">
-          <p class="first-rule__paragraph"><strong>ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.
+          <div class="first-rule__about">
+            <p class="first-rule__paragraph"><strong>ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.
+            </p>
+            <p class="first-rule__paragraph">
+              Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.
+            </p>
+            <p class="first-rule__paragraph">
+              (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.
+            </p>
+            <p class="first-rule__paragraph">
+              Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+            </p>
+          </div>
+      </div>
+
+      <div class="first-rule__margin2">
+        <div class="first-rule__about2">
+          <p class="first-rule__paragraph2">
+            Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
           </p>
-          <p class="first-rule__paragraph">
-            Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется margin-right и margin-bottom.
+          <p class="first-rule__paragraph2">
+            Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
           </p>
-          <p class="first-rule__paragraph">
-            (!) Свойства margin-left и margin-top используются крайне редко.
-          </p>
-          <p class="first-rule__paragraph">
-            Для padding верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+          <p class="first-rule__paragraph2">
+            Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
           </p>
         </div>
-
-      </div>
-      <div>
-        <p>
-          Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
-        </p>
-        <p>
-          Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
-        </p>
-        <p>
-          Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
-        </p>
-        <img src="./img/cat-sleep.jpg" alt="Спящий кот">
+        <div class="first-rule__secondimage"></div>
       </div>
     </section>
-    <section>
-      <h3>
+    <section class="second-rule">
+      <h3 class="second-rule__title">
         Отступ задается последнему возможному элементу в DOM-дереве
       </h3>
-      <div>
-        <p>
-          Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
-        </p>
-        <img src="./img/dom-image.jpg" alt="Пример дом дерева">
-        <img src="./img/ healthy-recipes.jpg" alt="Полезные рецепты">
+      <div class="center">
+        <figure>
+          <figcaption class="second-rule__figcaption">
+              Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
+          </figcaption>
+          <div class="second-rule__img">
+            <img  src="./img/dom-image.jpg" alt="Пример дом дерева">
+          </div>
+        </figure>
+        <img class="second-rule__recipies" src="./img/ healthy-recipes.jpg" alt="Полезные рецепты">
+      </div>
+        
         <p>
           Отступ делают за счёт соседних элементов, а не дочерних:
         </p>
