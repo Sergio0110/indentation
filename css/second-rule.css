@@ -7,12 +7,11 @@
 }
 
 .second-rule__figcaption {
-  margin-bottom: 30px;
-  width: 1079.001px;
+  max-width: 1079.001px;
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
-  
+  margin-bottom: 30px;
 }
 
 .second-rule__img {
@@ -23,12 +22,36 @@
 }
 
 .second-rule__recipies {
+  display: block;
+  margin: 0 auto;
   width: 600px;
   height: 450px;
-  left: 50px;
+  padding-bottom: 30px;
 }
 
-.center {
-  position: relative;
-  
+.second-rule__dopimage {
+  margin-bottom: 15px;
+}
+
+.second-rule__attention {
+  display: block;
+  margin: 0 auto;
+  width: 1020px;
+  margin-bottom: 45px;
+}
+
+.second-rule__phar {
+  margin-bottom: 30px;
+}
+
+.second-rule__attentiontitle {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.second-rule__rotatecat {
+  width: 1022px;
+  height: 504px;
+  margin-bottom: 50px;
 }
