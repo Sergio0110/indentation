@@ -41,6 +41,10 @@
 }
 
 .second-rule__phar {
+  margin-bottom: 30px;
+}
+
+.second-rule__phar:last-child {
   margin-bottom: 0;
 }
 
