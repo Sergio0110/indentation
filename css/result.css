@@ -4,17 +4,34 @@
   background: #F1F1F1;
   max-width: 1140px;
   height: 385px;
-  padding: 25px 45px;
-  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-left: 45px;
 }
 
 .result__lastcommit {
-  padding: 25px 0;
-  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 .result__points {
   color: #000;
   margin: 0;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.result__points:last-child {
+  padding-bottom: 0;
+}
+
+.result__title {
+  font-size: 44px;
+  color: #000;
+  font-weight: 700;
+  line-height: 120%;
+  padding-bottom: 20px;
+  
+}
+
+.result__li {
+  margin: 0;
 }

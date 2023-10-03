@@ -13,6 +13,9 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+article {
+  padding: 60px 0 50px 0;
+}
 /* Sections
    ========================================================================== */
 
@@ -20,9 +23,6 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
-  padding: 60px 150px 50px 150px;
-}
 
 /**
  * Render the `main` element consistently in IE.

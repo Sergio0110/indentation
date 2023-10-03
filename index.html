@@ -10,183 +10,180 @@
 </head>
 
 <body>
-  <main>
-    <section class="introduction">
-      <div class="container">
-        <h1 class="introduction__title">Отступы в вёрстке: margin и padding</h1>
-      <p class="introduction__paragraph">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
-      <p class="introduction__paragraph">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
-      </div>
-    </section>
+<article>
+  <section>
+    <div class="container">
+      <h1 class="introduction__title">Отступы в вёрстке: margin и padding</h1>
+    <p class="introduction__paragraph">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
+    <p class="introduction__paragraph">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+    </div>
+  </section>
 
-    <section class="contents-nav"> 
-      <div class="container">
-        <h2 class="contents-nav__title">Содержание:</h2>
-        <nav>
-          <ol class="contents-nav__groupli">
-            <li class="contents-nav__points"><a href="#section1">Отступ задается от предыдущего элемента к следующему</a></li>
-            <li class="contents-nav__points"><a href="#section2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
-            <li class="contents-nav__points"><a href="#section3">Для последнего элемента группы отступ обнуляется</a></li>
-          </ol>
-        </nav>
-      </div>
-    </section>
-
-    <section class="first-rule">
-      <div class="container">
-        <h3 class="first-rule__title" id="section1">
-          Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
-        </h3>
-        <div class="first-rule__margin">
-          <div class="first-rule__img"></div>
-            <div class="first-rule__about">
-              <p class="first-rule__paragraph"><strong>ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.
-              </p>
-              <p class="first-rule__paragraph">
-                Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.
-              </p>
-              <p class="first-rule__paragraph">
-                (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.
-              </p>
-              <p class="first-rule__paragraph">
-                Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
-              </p>
-            </div>
-        </div>
-  
-        <div class="first-rule__margin2">
-          <div class="first-rule__about2">
-            <p class="first-rule__paragraph2">
-              Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
+  <div class="container">
+  <section class="contents-nav"> 
+    
+      <h2 class="contents-nav__title">Содержание:</h2>
+      <nav>
+        <ol class="contents-nav__groupli">
+          <li class="contents-nav__points"><a href="#section1">Отступ задается от предыдущего элемента к следующему</a></li>
+          <li class="contents-nav__points"><a href="#section2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+          <li class="contents-nav__points"><a href="#section3">Для последнего элемента группы отступ обнуляется</a></li>
+        </ol>
+      </nav>
+  </section>
+</div>
+  <section class="first-rule">
+    <div class="container">
+      <h3 class="first-rule__title" id="section1">
+        Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
+      </h3>
+      <div class="first-rule__margin">
+        <div class="first-rule__img"></div>
+          <div class="first-rule__about">
+            <p class="first-rule__paragraph"><strong>ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.
             </p>
-            <p class="first-rule__paragraph2">
-              Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
+            <p class="first-rule__paragraph">
+              Свойство <i>margin</i> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.
             </p>
-            <p class="first-rule__paragraph2">
-              Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
+            <p class="first-rule__paragraph">
+              (!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.
+            </p>
+            <p class="first-rule__paragraph">
+              Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
             </p>
           </div>
-          <div class="first-rule__secondimage"></div>
-        </div>
       </div>
-    </section>
 
-    <section class="second-rule">
-      <div class="container">
-        <h3 class="second-rule__title" id="section2">
-          Отступ задается последнему возможному элементу в DOM-дереве
-        </h3>
-          <figure>
-            <figcaption class="second-rule__figcaption">
-                Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
-            </figcaption>
-            <div class="second-rule__img">
-              <img  src="./img/dom-image.jpg" alt="Пример дом дерева">
-            </div>
-          </figure>
-          <img class="second-rule__recipies" src="./img/ healthy-recipes.jpg" alt="Полезные рецепты">
-        
-          
-          <figure>
-            <figcaption class="second-rule__figcaption">
-              Отступ делают за счёт соседних элементов, а не дочерних:
-            </figcaption>
-
-            <img class="second-rule__dopimage" src="./img/healy-recp.jpg" alt="Пример кода полезные рецепты">
-          
-            <figcaption class="second-rule__attention">
-              <strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
-            </figcaption>
-          </figure>
-  
-          <p class="second-rule__phar">
-            Казалось бы, можно задать отступ параграфу &lt;p&gt; , либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+      <div class="first-rule__margin2">
+        <div class="first-rule__about2">
+          <p class="first-rule__paragraph2">
+            Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
           </p>
-          
-          <figure>
-            <figcaption class="second-rule__phar">
-              Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
-            </figcaption>
-            <img class="second-rule__attentiontitle" src="./img/section-title.jpg" alt="Важный заголовок описывающий секцию">
-          </figure>
-          <figure>
-            
-            <figcaption class="second-rule__phar">
-              В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section.</i> Именно для него задается <i>padding-top,</i> а не <i>div</i> с классом <i>container.</i> Свойства <i>margin,</i> которые стоят по умолчанию необходимо обнулить.
-            </figcaption>
-            
-            <img class="second-rule__rotatecat" src="./img/happy-cat.jpg" alt="">
-            
-            <figcaption class="second-rule__phar">
-              Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
-            </figcaption>
-          </figure>
+          <p class="first-rule__paragraph2">
+            Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
+          </p>
+          <p class="first-rule__paragraph2">
+            Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.
+          </p>
         </div>
-    </section>
+        <div class="first-rule__secondimage"></div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <div class="container">
-        <h3 class="third-rule__title" id="section3">Для последнего элемента группы отступ всегда обнуляется</h3>
-      <p class="third-rule__phar">
-        Для наглядности возьмём наш предыдущий пример с рецептами
-      </p>
-      <figure>
-        <figcaption class="second-rule__phar">
-            Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
-        </figcaption>
-        <img class="thirg-rule__image" src="./img/margin0.jpg" alt="обнуление отступов последнего элемента">
-      </figure>
-
-      <figure>
-        <figcaption class="second-rule__phar">
-          В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section.</i> Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px.</i>
-        </figcaption>
-          <div class="third-rule__group">
-            <img class="third-rule__groupimage" src="./img/padding-bottom.jpg" alt="Отступы">
-            <img class="third-rule__groupimagetwo" src="./img/padding1.jpg" alt="">
-            <img class="third-rule__groupimage" src="./img/padding2.jpg" alt="">
-          </div>
-      </figure>
-
-      <figure>
-          <figcaption class="third-rule__phar">
-            Для большего понимания рассмотрим другой пример, который часто встречается на практике:
+  <section class="second-rule">
+    <div class="container">
+      <h3 class="second-rule__title" id="section2">
+        Отступ задается последнему возможному элементу в DOM-дереве
+      </h3>
+        <figure>
+          <figcaption class="second-rule__figcaption">
+              Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
           </figcaption>
-        <img class="third-rule__navbar" src="./img/menu-point.jpg" alt="пункты меню">
-        <img class="third-rule__heaerimage" src="./img/image-header.jpg" alt="изображение header-menu">
+          <div class="second-rule__img">
+            <img  src="./img/dom-image.jpg" alt="Пример дом дерева">
+          </div>
+        </figure>
+        <img class="second-rule__recipies" src="./img/ healthy-recipes.jpg" alt="Полезные рецепты">
+      
+        
+        <figure>
+          <figcaption class="second-rule__figcaption">
+            Отступ делают за счёт соседних элементов, а не дочерних:
+          </figcaption>
+
+          <img class="second-rule__dopimage" src="./img/healy-recp.jpg" alt="Пример кода полезные рецепты">
+        
+          <figcaption class="second-rule__attention">
+            <strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
+          </figcaption>
+        </figure>
+
+        <p class="second-rule__phar">
+          Казалось бы, можно задать отступ параграфу &lt;p&gt; , либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+        </p>
+        
+        <figure>
+          <figcaption class="second-rule__phar">
+            Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
+          </figcaption>
+          <img class="second-rule__attentiontitle" src="./img/section-title.jpg" alt="Важный заголовок описывающий секцию">
+        </figure>
+        <figure>          
+          <figcaption class="second-rule__phar">
+            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section.</i> Именно для него задается <i>padding-top,</i> а не <i>div</i> с классом <i>container.</i> Свойства <i>margin,</i> которые стоят по умолчанию необходимо обнулить.
+          </figcaption>
+          <img class="second-rule__rotatecat" src="./img/happy-cat.jpg" alt="">
+          <figcaption class="second-rule__phar">
+            Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.
+          </figcaption>
+        </figure>
+      </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h3 class="third-rule__title" id="section3">Для последнего элемента группы отступ всегда обнуляется</h3>
+    <p class="third-rule__phar">
+      Для наглядности возьмём наш предыдущий пример с рецептами
+    </p>
+    <figure>
+      <figcaption class="third-rule__phar">
+          Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
+      </figcaption>
+      <img class="thirg-rule__image" src="./img/margin0.jpg" alt="обнуление отступов последнего элемента">
+    </figure>
+
+    <figure>
+      <figcaption class="third-rule__phar">
+        В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section.</i> Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px.</i>
+      </figcaption>
+        <div class="third-rule__group">
+          <img class="third-rule__groupimage" src="./img/padding-bottom.jpg" alt="Отступы">
+          <img class="third-rule__groupimagetwo" src="./img/padding1.jpg" alt="">
+          <img class="third-rule__groupimage" src="./img/padding2.jpg" alt="">
+        </div>
+    </figure>
+
+    <figure>
+        <figcaption class="third-rule__phar">
+          Для большего понимания рассмотрим другой пример, который часто встречается на практике:
+        </figcaption>
+      <img class="third-rule__navbar" src="./img/menu-point.jpg" alt="пункты меню">
+      <img class="third-rule__heaerimage" src="./img/image-header.jpg" alt="изображение header-menu">
+    </figure>
+
+      <figure>
+        <figcaption class="third-rule__phar">
+            Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
+        </figcaption>
+        <img class="third-rule__menuitem" src="./img/header-menu-item.jpg" alt="header-menu-item">
       </figure>
 
         <figure>
           <figcaption class="third-rule__phar">
-              Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
+            Советую использовать псевдоклассы :last-child чаще других, например так:
           </figcaption>
-          <img class="third-rule__menuitem" src="./img/header-menu-item.jpg" alt="header-menu-item">
+          <img class="third-rule__lastchild" src="./img/header-last-child.jpg" alt="header-last-child">
         </figure>
+    </div>
+  </section>
 
-          <figure>
-            <figcaption class="third-rule__phar">
-              Советую использовать псевдоклассы :last-child чаще других, например так:
-            </figcaption>
-            <img class="third-rule__lastchild" src="./img/header-last-child.jpg" alt="header-last-child">
-          </figure>
-      </div>
-    </section>
-
+  <div class="container">
     <section class="result">
-      <div class="container">
-        <h2 class="contents-nav__title">Подытожим:</h2>
-      <ul class="contents-nav__groupli">
-        <li class="result__points">— отступы задаём от предыдущего элемента к следующему</li>
-        <li class="result__points">— используем только margin-right и margin-bottom</li>
-        <li class="result__points">— внешние отступы задаются только между соседями</li>
-        <li class="result__points">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-        <li class="result__points">— последнему элементу группы отступ всегда обнуляем</li>
-      </ul>
-      <p class="result__lastcommit">
-        Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
-      </p>
-      </div>
+      <h2 class="result__title">Подытожим:</h2>
+        <ul class="result__li">
+          <li class="result__points">— отступы задаём от предыдущего элемента к следующему</li>
+          <li class="result__points">— используем только margin-right и margin-bottom</li>
+          <li class="result__points">— внешние отступы задаются только между соседями</li>
+          <li class="result__points">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+          <li class="result__points">— последнему элементу группы отступ всегда обнуляем</li>
+        </ul>
+        <p class="result__lastcommit">
+          Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
+        </p>
     </section>
-  </main>
+  </div>
+</article>
 </body>
 </html>
