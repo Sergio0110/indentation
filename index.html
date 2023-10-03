@@ -24,9 +24,9 @@
         <h2 class="contents-nav__title">Содержание:</h2>
         <nav>
           <ol class="contents-nav__groupli">
-            <li class="contents-nav__points">Отступ задается от предыдущего элемента к следующему</li>
-            <li class="contents-nav__points">Отступ задается последнему возможному элементу в DOM-дереве</li>
-            <li class="contents-nav__points">Для последнего элемента группы отступ обнуляется</li>
+            <li class="contents-nav__points"><a href="#section1">Отступ задается от предыдущего элемента к следующему</a></li>
+            <li class="contents-nav__points"><a href="#section2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+            <li class="contents-nav__points"><a href="#section3">Для последнего элемента группы отступ обнуляется</a></li>
           </ol>
         </nav>
       </div>
@@ -34,7 +34,7 @@
 
     <section class="first-rule">
       <div class="container">
-        <h3 class="first-rule__title">
+        <h3 class="first-rule__title" id="section1">
           Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.
         </h3>
         <div class="first-rule__margin">
@@ -73,7 +73,7 @@
 
     <section class="second-rule">
       <div class="container">
-        <h3 class="second-rule__title">
+        <h3 class="second-rule__title" id="section2">
           Отступ задается последнему возможному элементу в DOM-дереве
         </h3>
           <figure>
@@ -125,46 +125,67 @@
     </section>
 
     <section>
-      <h3 class="third-rule__title">Для последнего элемента группы отступ всегда обнуляется</h3>
-      <p>
+      <div class="container">
+        <h3 class="third-rule__title" id="section3">Для последнего элемента группы отступ всегда обнуляется</h3>
+      <p class="third-rule__phar">
         Для наглядности возьмём наш предыдущий пример с рецептами
       </p>
-      <p>
-        Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
-      </p>
-      <img src="./img/margin0.jpg" alt="обнуление отступов последнего элемента">
-      <p>
-        В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.
-      </p>
-      <img src="./img/padding-bottom.jpg" alt="Отступы">
-      <img src="./img/padding1.jpg" alt="">
-      <img src="./img/padding2.jpg" alt="">
-      <p>
-        Для большего понимания рассмотрим другой пример, который часто встречается на практике:
-      </p>
-      <img src="./img/menu-point.jpg" alt="пункты меню">
-      <img src="./img/image-header.jpg" alt="изображение header-menu">
-      <p>
-        Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
-      </p>
-      <img src="./img/header-menu-item.jpg" alt="header-menu-item">
-      <p>Советую использовать псевдоклассы :last-child чаще других, например так:
-      </p>
-      <img src="./img/header-last-child.jpg" alt="header-last-child">
+      <figure>
+        <figcaption class="second-rule__phar">
+            Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.
+        </figcaption>
+        <img class="thirg-rule__image" src="./img/margin0.jpg" alt="обнуление отступов последнего элемента">
+      </figure>
+
+      <figure>
+        <figcaption class="second-rule__phar">
+          В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section.</i> Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px.</i>
+        </figcaption>
+          <div class="third-rule__group">
+            <img class="third-rule__groupimage" src="./img/padding-bottom.jpg" alt="Отступы">
+            <img class="third-rule__groupimagetwo" src="./img/padding1.jpg" alt="">
+            <img class="third-rule__groupimage" src="./img/padding2.jpg" alt="">
+          </div>
+      </figure>
+
+      <figure>
+          <figcaption class="third-rule__phar">
+            Для большего понимания рассмотрим другой пример, который часто встречается на практике:
+          </figcaption>
+        <img class="third-rule__navbar" src="./img/menu-point.jpg" alt="пункты меню">
+        <img class="third-rule__heaerimage" src="./img/image-header.jpg" alt="изображение header-menu">
+      </figure>
+
+        <figure>
+          <figcaption class="third-rule__phar">
+              Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:
+          </figcaption>
+          <img class="third-rule__menuitem" src="./img/header-menu-item.jpg" alt="header-menu-item">
+        </figure>
+
+          <figure>
+            <figcaption class="third-rule__phar">
+              Советую использовать псевдоклассы :last-child чаще других, например так:
+            </figcaption>
+            <img class="third-rule__lastchild" src="./img/header-last-child.jpg" alt="header-last-child">
+          </figure>
+      </div>
     </section>
 
     <section class="result">
-      <h2>Подытожим:</h2>
-      <ul>
-        <li>— отступы задаём от предыдущего элемента к следующему</li>
-        <li>— используем только margin-right и margin-bottom</li>
-        <li>— внешние отступы задаются только между соседями</li>
-        <li>— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-        <li>— последнему элементу группы отступ всегда обнуляем</li>
+      <div class="container">
+        <h2 class="contents-nav__title">Подытожим:</h2>
+      <ul class="contents-nav__groupli">
+        <li class="result__points">— отступы задаём от предыдущего элемента к следующему</li>
+        <li class="result__points">— используем только margin-right и margin-bottom</li>
+        <li class="result__points">— внешние отступы задаются только между соседями</li>
+        <li class="result__points">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+        <li class="result__points">— последнему элементу группы отступ всегда обнуляем</li>
       </ul>
-      <p>
+      <p class="result__lastcommit">
         Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.
       </p>
+      </div>
     </section>
   </main>
 </body>

@@ -1,0 +1,20 @@
+.result {
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #F1F1F1;
+  max-width: 1140px;
+  height: 385px;
+  padding: 25px 45px;
+  margin-bottom: 50px;
+}
+
+.result__lastcommit {
+  padding: 25px 0;
+  margin-bottom: 0;
+}
+
+.result__points {
+  color: #000;
+  margin: 0;
+  margin-bottom: 10px;
+}

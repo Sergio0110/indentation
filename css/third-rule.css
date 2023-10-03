@@ -5,3 +5,56 @@
   margin-bottom: 30px;
   max-width: 1080px;
 }
+
+.third-rule__phar {
+  margin-bottom: 30px;
+}
+
+.thirg-rule__image {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: 607px;
+  margin-bottom: 30px;
+}
+
+.third-rule__groupimage {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.third-rule__group {
+  line-height: 0.15;
+}
+.third-rule__navbar {
+  display: block;
+  margin: 0 auto;
+  width: 1080px;
+  height: 88px;
+  margin-bottom: 30px;
+}
+
+.third-rule__heaerimage {
+  display: block;
+  margin: 0 auto;
+  width: 806px;
+  height: 475px;
+  margin-bottom: 30px;
+}
+
+.third-rule__menuitem  {
+  display: block;
+  margin: 0 auto;
+  width: 317px;
+  height: 110px;
+  margin-bottom: 30px;
+}
+
+.third-rule__lastchild {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  height: 383px;
+  margin-bottom: 50px;
+}
