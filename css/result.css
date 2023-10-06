@@ -9,8 +9,8 @@
 }
 
 .result__lastcommit {
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding: 30px 30px 25px 0;
+  min-width: 1065px;
 }
 
 .result__points {
