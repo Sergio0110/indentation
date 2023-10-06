@@ -1,9 +1,10 @@
 .introduction {
-  padding: 0 30px;
+  padding: 25px 0;
   
 }
 
 .introduction__title {
+  max-width: 1080px;
   line-height: 120%;
   font-size: 60px;
   margin-bottom: 30px;
