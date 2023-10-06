@@ -1,9 +1,5 @@
-.introduction {
-  padding: 25px 0;
-  
-}
 
-.introduction__title {
+.intro__title {
   max-width: 1080px;
   line-height: 120%;
   font-size: 60px;
@@ -11,7 +7,7 @@
   font-weight: 900;
 }
 
-.introduction__paragraph {
+.intro__paragraph {
   margin-bottom: 30px;
   max-width: 1080px;
 }
