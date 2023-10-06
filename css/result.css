@@ -3,7 +3,6 @@
   border-radius: 10px;
   background: #F1F1F1;
   max-width: 1140px;
-  height: 385px;
 }
 
 .result__lastcommit {
@@ -34,6 +33,6 @@
   margin-bottom: 30px;
 }
 
-.result__pad {
+.container-gray {
   padding: 30px 30px 25px 45px;
 }
