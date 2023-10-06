@@ -11,6 +11,9 @@
   margin-bottom: 30px;
 }
 
+.first-rule__margin2 {
+  margin-bottom: 0;
+}
 
 .first-rule__img {
   background-image: url('../img/cats-img.jpg');
@@ -64,8 +67,4 @@
 
 .first-rule__paragraph2:last-child {
   margin-bottom: 0;
-}
-
-.first-rule__margin2 {
-  margin-bottom: 30px;
 }
