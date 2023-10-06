@@ -4,12 +4,10 @@
   background: #F1F1F1;
   max-width: 1140px;
   height: 385px;
-  padding-top: 25px;
-  padding-left: 45px;
 }
 
 .result__lastcommit {
-  padding: 30px 30px 25px 0;
+  
   min-width: 1065px;
 }
 
@@ -33,5 +31,9 @@
 }
 
 .result__li {
-  margin: 0;
+  margin-bottom: 30px;
+}
+
+.result__pad {
+  padding: 30px 30px 25px 45px;
 }
