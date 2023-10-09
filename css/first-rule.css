@@ -7,12 +7,8 @@
   max-width: 1080px;
 }
 
-.first-rule__margin{
+.first-rule__block_margin_bottom {
   margin-bottom: 30px;
-}
-
-.first-rule__margin2 {
-  margin-bottom: 0;
 }
 
 .first-rule__img {
